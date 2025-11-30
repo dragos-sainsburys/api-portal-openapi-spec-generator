@@ -958,7 +958,12 @@ Year 2+ ROI: (£165,000 - £25,000) / £25,000 = 560%
 **Focus**: Advanced features, broader compatibility
 
 **Features**:
-- [ ] Gradle plugin version
+- [ ] **Gradle plugin version** (HIGH PRIORITY)
+  - Separate Gradle plugin with same functionality
+  - Gradle task: `./gradlew generateOpenApiSpec`
+  - Supports Gradle DSL configuration
+  - Targets growing Gradle user base (30-35% and increasing)
+  - Shares core logic with Maven plugin
 - [ ] Spring Boot 2.x support
 - [ ] WebFlux/reactive support
 - [ ] Advanced mocking framework
@@ -966,8 +971,15 @@ Year 2+ ROI: (£165,000 - £25,000) / £25,000 = 560%
 - [ ] Performance improvements
 - [ ] Multi-module enhancements
 
+**Gradle Plugin Rationale**:
+- **Market Growth**: Gradle adoption growing 10-15% year-over-year
+- **Developer Preference**: Younger developers and new projects prefer Gradle
+- **Android Ecosystem**: 95%+ of Android projects use Gradle
+- **Modern Stack**: Kotlin and reactive projects typically use Gradle
+- **Performance**: Better for large, complex builds
+
 **Targets**:
-- 75% team adoption
+- 75% team adoption (including Gradle users)
 - <1% failure rate
 - <20 second execution time
 
