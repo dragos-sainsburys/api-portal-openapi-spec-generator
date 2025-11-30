@@ -30,7 +30,7 @@ jobs:
     - name: Generate OpenAPI spec from example app
       run: |
         cd example-app
-        mvn clean compile openapi-generator:generate
+        mvn clean compile openapi-spec-generator:generate
       
     - name: Upload OpenAPI spec
       uses: actions/upload-artifact@v4

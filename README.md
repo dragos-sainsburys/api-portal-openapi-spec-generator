@@ -111,7 +111,7 @@ springdoc:
 ### 5. Generate Your Spec
 
 ```bash
-mvn clean compile openapi-generator:generate
+mvn clean compile openapi-spec-generator:generate
 ```
 
 Your OpenAPI spec will be in `target/openapi.yaml` 🎉
@@ -204,7 +204,7 @@ mvn clean install
 1. Install the plugin locally (as above)
 2. Add plugin configuration to your `pom.xml` (see Quick Start)
 3. Create the `openapi-generation` profile
-4. Run `mvn openapi-generator:generate`
+4. Run `mvn openapi-spec-generator:generate`
 
 ## 📖 Usage Examples
 
@@ -212,7 +212,7 @@ mvn clean install
 
 ```bash
 # Generate OpenAPI spec
-mvn openapi-generator:generate
+mvn openapi-spec-generator:generate
 ```
 
 ### Generate with Custom Configuration

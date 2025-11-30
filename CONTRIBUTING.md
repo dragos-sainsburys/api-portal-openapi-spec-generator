@@ -32,7 +32,7 @@ Thank you for your interest in contributing to the OpenAPI Spec Generator projec
 4. Try the example app:
    ```bash
    cd example-app
-   mvn openapi-generator:generate
+   mvn openapi-spec-generator:generate
    ```
 
 ## Project Structure

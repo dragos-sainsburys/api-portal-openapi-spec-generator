@@ -123,7 +123,7 @@ Maven Build
 )
 ```
 
-- `name = "generate"`: Goal name (invoked as `openapi-generator:generate`)
+- `name = "generate"`: Goal name (invoked as `openapi-spec-generator:generate`)
 - `defaultPhase = PROCESS_CLASSES`: Runs after compilation but before packaging
 - `requiresDependencyResolution = COMPILE_PLUS_RUNTIME`: Ensures all dependencies are resolved
 
@@ -829,7 +829,7 @@ public void testPluginExecution() throws Exception {
     File targetDir = new File(projectDir, "target");
     
     // Execute plugin
-    executeMaven(projectDir, "clean", "compile", "openapi-generator:generate");
+    executeMaven(projectDir, "clean", "compile", "openapi-spec-generator:generate");
     
     // Verify output
     File specFile = new File(targetDir, "openapi.yaml");
@@ -1002,7 +1002,7 @@ springdoc:
 **Diagnosis**:
 ```bash
 # Check application logs
-mvn clean compile openapi-generator:generate -X
+mvn clean compile openapi-spec-generator:generate -X
 ```
 
 **Solutions**:

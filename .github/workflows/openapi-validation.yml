@@ -34,7 +34,7 @@ jobs:
     - name: Generate OpenAPI Spec
       run: |
         cd example-app
-        mvn clean compile openapi-generator:generate
+        mvn clean compile openapi-spec-generator:generate
 
     - name: Install Spectral
       run: npm install -g @stoplight/spectral-cli

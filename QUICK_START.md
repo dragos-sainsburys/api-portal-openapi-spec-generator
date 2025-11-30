@@ -66,7 +66,7 @@ springdoc:
 ## Step 4: Generate! (1 minute)
 
 ```bash
-mvn clean compile openapi-generator:generate
+mvn clean compile openapi-spec-generator:generate
 ```
 
 ✅ Your spec is now in `target/openapi.yaml`!
@@ -75,7 +75,7 @@ mvn clean compile openapi-generator:generate
 
 ```bash
 cd example-app
-mvn clean compile openapi-generator:generate
+mvn clean compile openapi-spec-generator:generate
 cat target/openapi.yaml
 ```
 
